@@ -12,7 +12,7 @@ $ sudo apt-get update
 $ sudo apt-get install apache2
 ```
 
-move "plot_3gAcc_from_websocket.html" to "/var/www/html/"
+move "plot_3gAcc_from_websocket.html" to "/var/www/html/" <>
 move "plot_3gAcc_from_websocket_xyz.html" to "/var/www/html/"
 
 ```
