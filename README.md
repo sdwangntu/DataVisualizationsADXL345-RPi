@@ -29,20 +29,24 @@ $ python3 socket_server.py
 ref: https://www.instructables.com/id/how-to-use-the-ADXL345-on-Raspberry-pi/
 
 1. 4 connections: 
-ADXL - RPI
-===========
-GND  - GND
-3V   - 3V3
-SDA  - SDA
-SCL  - SCL
+
+
+| ADXL | RPI |
+| ---- | --- |
+| GND  | GND |
+| 3V   | 3V3 |
+| SDA  | SDA |
+| SCL  | SCL |
+
+
 2. sudo nano /etc/modules & add
-i2c-bcm2708
-i2c-dev
-3. sudo raspi-config & enable I^2C
+    * i2c-bcm2708
+    * i2c-dev
+3. sudo raspi-config & enable I2C
 3. sudo reboot
 4. sudo apt-get install python-smbus i2c-tools git-core
 5. sudo i2cdetect -y 1
-  * you should not get any errors and see a device at address 53
+    * you should not get any errors and see a device at address 53
 
 and then
 
