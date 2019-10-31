@@ -19,12 +19,13 @@ move "plot_3gAcc_from_websocket_xyz.html" to "/var/www/html/"
 $ python3 ws_server.py
 ```
 
-## w/o ADXL345 Sensor
+## Sensor side
+### w/o ADXL345 Sensor
 ```
 $ python3 socket_server.py
 ```
 
-## w/ ADXL345 Sensor
+### w/ ADXL345 Sensor
 
 ref: https://www.instructables.com/id/how-to-use-the-ADXL345-on-Raspberry-pi/
 
