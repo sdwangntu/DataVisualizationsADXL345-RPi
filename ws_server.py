@@ -4,7 +4,7 @@ import pickle
 import json
 import socket
 
-HOST = '192.168.11.18'  # The server's hostname or IP address
+HOST = 'localhost'  # The server's hostname or IP address
 PORT = 65431        # The port used by the server
 
 async def hello(websocket, path):
@@ -22,7 +22,7 @@ async def hello(websocket, path):
             print('Received from socket server : ', data)
             await websocket.send(data)
 
-start_server = websockets.serve(hello, "192.168.11.85", 8866)
+start_server = websockets.serve(hello, "192.168.11.66", 8866)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
