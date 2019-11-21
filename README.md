@@ -15,8 +15,12 @@ $ sudo apt-get update
 $ sudo apt-get install apache2
 ```
 
-move "plot_3gAcc_from_websocket.html" to "/var/www/html/" <br/>
-move "plot_3gAcc_from_websocket_xyz.html" to "/var/www/html/"
+copy "plot_3gAcc_from_websocket.html" to "/var/www/html/" <br/>
+copy "plot_3gAcc_from_websocket_xyz.html" to "/var/www/html/" <br/>
+```
+$ sudo cp plot_3gAcc_from_websocket.html /var/www/html/
+$ sudo cp plot_3gAcc_from_websocket_xyz.html /var/www/html/
+```
 
 ```
 $ python3 ws_server.py
