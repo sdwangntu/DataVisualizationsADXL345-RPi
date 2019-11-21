@@ -1,7 +1,7 @@
 # Real-time Data Visualization (an import from https://github.com/r07921078/rpi_realtime_3g for a lab provided for Taipei Municipal Jianguo High School)
 ## IP
-*192.168.130.xxx (Web Server-sensor gateway)
-*localhost (Sensor device)
+* 192.168.130.xxx (Web Server-sensor gateway)
+* localhost (Sensor device)
 
 **You need change ip address(in source code) dependent on your "network environment"**
 
