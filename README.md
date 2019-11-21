@@ -1,8 +1,8 @@
 # Real-time Data Visualization (an import from https://github.com/r07921078/rpi_realtime_3g for a lab provided for Taipei Municipal Jianguo High School)
 ## IP
-Sensor gateway:
+### Sensor gateway:
 * 192.168.130.xxx (Web Server-sensor gateway, for websocket server)
-Sensor device:
+### Sensor device:
 * 192.168.130.yyy
 * localhost (If Sensor device is also installed in the sensor gateway, for socket server )
 
