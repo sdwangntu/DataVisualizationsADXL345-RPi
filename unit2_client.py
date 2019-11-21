@@ -2,8 +2,8 @@ import time
 import json
 import socket
 
-HOST = 'localhost'  # The server's hostname or IP address
-PORT = 65431        # The port used by the server
+HOST = '??????' # sensor device's IP or hostname (localhost)
+PORT = 65431    # Port to listen on (non-privileged ports are > 1023)
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
