@@ -8,7 +8,7 @@
 
 **You need change ip address(in source code) dependent on your "network environment"**
 
-## Web server - sensor gateway
+## Web server and websocket server - sensor gateway
 ```
 $ pip3 install websockets
 $ sudo apt-get update
@@ -21,15 +21,15 @@ copy "plot_3gAcc_from_websocket_xyz.html" to "/var/www/html/" <br/>
 $ sudo cp plot_3gAcc_from_websocket.html /var/www/html/
 $ sudo cp plot_3gAcc_from_websocket_xyz.html /var/www/html/
 ```
-
+### start Websocket server for sensor gateway
 ```
-$ python3 ws_server.py
+$ python3 ws_server.py &
 ```
 
 ## Sensor device
 ### w/o ADXL345 Sensor
 ```
-$ python3 socket_server_random.py
+$ python3 socket_server_random.py &
 ```
 
 ### w/ ADXL345 Sensor
@@ -59,7 +59,7 @@ ref: https://www.instructables.com/id/how-to-use-the-ADXL345-on-Raspberry-pi/
 and then
 
 ```
-$ python3 socket_server.py
+$ python3 socket_server.py &
 ```
 
 ## PDF/PPT
