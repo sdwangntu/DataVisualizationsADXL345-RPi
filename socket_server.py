@@ -7,8 +7,8 @@ import json
 import time
 import random
 
-HOST = '192.168.11.18'  # Standard loopback interface address (localhost)
-PORT = 65431            # Port to listen on (non-privileged ports are > 1023)
+HOST = '??????' # sensor device's IP or hostname (localhost)
+PORT = 65431    # Port to listen on (non-privileged ports are > 1023)
 
 sample = 0
 
