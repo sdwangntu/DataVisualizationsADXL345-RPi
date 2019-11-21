@@ -4,8 +4,11 @@ import pickle
 import json
 import socket
 
-HOST = '??????' # sensor device's IP or hostname (localhost)
+HOST = 'localhost' # sensor device's IP; if localhost, the sensor device role
+                   # is also played by the same machine
 PORT = 65431    # Port to listen on (non-privileged ports are > 1023)
+Gateway_IP = '192.168.43.146'   # Gateway's IP for websocket server
+
 
 async def hello(websocket, path):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -22,7 +25,7 @@ async def hello(websocket, path):
             print('Received from socket server : ', data)
             await websocket.send(data)
 
-start_server = websockets.serve(hello, "localhost", 8866)
+start_server = websockets.serve(hello, Gateway_IP, 8866)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
