@@ -4,11 +4,10 @@ import pickle
 import json
 import socket
 
+Gateway_IP = '192.168.43.???'   # Gateway's IP for websocket server
 HOST = 'localhost' # sensor device's IP; if localhost, the sensor device role
                    # is also played by the same machine
 PORT = 65431    # Port to listen on (non-privileged ports are > 1023)
-Gateway_IP = '192.168.43.146'   # Gateway's IP for websocket server
-
 
 async def hello(websocket, path):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
