@@ -7,6 +7,7 @@ import json
 import time
 import random
 
+# for socket server in the sensor device
 HOST = 'localhost' # sensor device's IP or localhost if sensor is installed at the gateway
 PORT = 65431    # Port to listen on (non-privileged ports are > 1023)
 
