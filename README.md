@@ -1,7 +1,7 @@
-# Real-time Data Visualization
+# Real-time Data Visualization (an import from https://github.com/r07921078/rpi_realtime_3g for a lab provided for Taipei Municipal Jianguo High School)
 ## IP
-192.168.11.85 (Web Server)
-192.168.11.18 (Sensor)
+192.168.11.85 (Web Server-sensor gateway)
+localhost (Sensor device)
 
 **You need change ip address(in source code) dependent on your "network environment"**
 
@@ -19,10 +19,10 @@ move "plot_3gAcc_from_websocket_xyz.html" to "/var/www/html/"
 $ python3 ws_server.py
 ```
 
-## Sensor side
+## Sensor device
 ### w/o ADXL345 Sensor
 ```
-$ python3 socket_server.py
+$ python3 socket_server_random.py
 ```
 
 ### w/ ADXL345 Sensor
@@ -52,10 +52,11 @@ ref: https://www.instructables.com/id/how-to-use-the-ADXL345-on-Raspberry-pi/
 and then
 
 ```
-$ python3 socket_server_adxl345.py
+$ python3 socket_server.py
 ```
 
-## PPT
+## PDF/PPT
+* http://hpc.ee.ntu.edu.tw/html/sd/DataVisual-Lab-1121-2019/IoT-Data-Visualization-Lab-1121.pdf
 * https://docs.google.com/presentation/d/17gcLdMVilcXN4QGtei15g-6nFRCPQJV9zVY96pl77yE/edit?usp=sharing
 
 
