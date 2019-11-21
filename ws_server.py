@@ -5,9 +5,8 @@ import json
 import socket
 
 Gateway_IP = '192.168.43.???'   # Gateway's IP for websocket server
-HOST = 'localhost' # sensor device's IP; if localhost, the sensor device role
-                   # is also played by the same machine
-PORT = 65431    # Port to listen on (non-privileged ports are > 1023)
+HOST = 'localhost'   # sensor device's IP; if localhost, the sensor device is installed in the gateway
+PORT = 65431         # Port to listen on (non-privileged ports are > 1023)
 
 async def hello(websocket, path):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
